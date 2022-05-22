@@ -1,5 +1,7 @@
-export interface TodoInderface{
-    text: string;
-    id: string;
-    isCompleted: boolean;
+export interface TodoInterface{
+    text: string,
+    id: string,
+    isCompleted: boolean,
+    deadline: string,
+    plainText: string,
 }

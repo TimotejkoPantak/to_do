@@ -1,11 +1,34 @@
 <header class="header">
     <h1 class="main_heading">What For Today ?</h1>
     <input
+    required
+    type="text"
         class="main_input"
-        placeholder="What you want to be done ?"
+        placeholder="Add Title"
         autofocus
         [value]="text"
         (keyup)="changeText($event)"
-        (keyup.enter)="addTodo()"
+
     />
+
+    <input
+    required
+        class="plaintext_input"
+        placeholder="Add Content"
+        [value]="plainText"
+        (keyup)="changePlainText($event)"
+
+    />
+
+    <input
+    required
+        type="datetime-local"
+        class="deadline_input"
+        placeholder="Add Deadline"
+        [value]="deadline"
+        (keyup)="changeDeadline($event)"
+        (change)="changeDeadline($event)"
+    />
+    <br>
+    <button class="submit" type="submit" (click)="addTodo()" > ADD</button>
 </header>

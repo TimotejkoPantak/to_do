@@ -1,0 +1,37 @@
+<!-- <span>{{ todoProps.isCompleted }}</span> -->
+<div class="main_todo">
+    
+    <li [ngClass]="{editing: isEditingProps}">
+        <div class="title_view">
+            <input
+                type="checkbox"
+                class="toggle"
+                [checked]="todoProps.isCompleted"
+                (change)="toggleTodo()"
+                >
+            <label (dblclick)="setTodoInEditMode()">
+                <strong class="margin_element">{{ todoProps.text }}</strong>
+            </label>
+        </div>
+        <ng-container *ngIf="isEditingProps">
+            <input 
+                #textInput
+                class="edit"
+                [value]="editingText"
+                (keyup)="changeText($event)"
+                (keyup.enter)="changeTodo()"
+                />
+        </ng-container>
+    </li>
+    <br>
+    <li>
+        {{ todoProps.plainText }}
+    </li>
+    <br>
+    <li>
+        {{ todoProps.deadline }}
+    </li>
+    <br>
+    <button class="destroy" (click)="removeTodo()"></button>
+    <hr>
+</div>
