@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component} from "@angular/core";
 import { filter, map, Observable } from "rxjs";
 import { combineLatest,} from "rxjs/internal/observable/combineLatest";
 import { TodoService } from "../../services/todos.service";
@@ -15,6 +15,8 @@ export class ListComponent {
     isAllTodosSelected$: Observable<boolean>;
     editingId: string | null = null;
 
+    searchedKeyword: string | undefined;
+    
     constructor(private todosService: TodoService){
         this.isAllTodosSelected$ = this.todosService.todos$.pipe(map((todos) => todos.every(todo => todo.isCompleted) ));
 
@@ -43,4 +45,6 @@ export class ListComponent {
     setEditingId(editingId: string | null): void {
         this.editingId = editingId;
     }
+
+
 }
