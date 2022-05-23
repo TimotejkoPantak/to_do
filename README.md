@@ -1,7 +1,7 @@
 #  Timothy's Todo 📒
 
 <h2 align="center">O projekte 🔎</h2>
-<p align="center">Tento repozitár slúži ako zadanie od spoločnosti AMCEF s.r.o..  Podarilo sa mi vypracovať takmer všetky požiadavky, no na niektoré som bohužiaľ nenašiel riešenie (viď. nižšie). </p><br>
+<p align="center">Tento repozitár slúži ako zadanie od spoločnosti AMCEF s.r.o..  Podarilo sa mi vypracovať takmer všetky požiadavky, no na niektoré som bohužiaľ nenašiel riešenie (viď. nižšie). Tento projekt mi trvalo vytvoriť 6-7 hodín. </p><br>
 
 <h2 align="center">Moje hodnotenie 🕵️‍♂️</h2>
 <h4>🟢Plusy</h4>
